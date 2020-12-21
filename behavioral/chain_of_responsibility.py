@@ -27,9 +27,6 @@ class PasswordHandler(AbstractHandler):
 
     def set_next(self, handler):
         self._next_handler = handler
-        # Возврат обработчика отсюда позволит связать обработчики простым
-        # способом, вот так:
-        # monkey.set_next(squirrel).set_next(dog)
         return handler
 
     @abstractmethod
@@ -87,7 +84,7 @@ letter = CheckLetter()
 digit = CheckDigit()
 size = CheckSize()
 
-# letter.set_next(letter).set_next(size)
+
 print("Проверка цепочки цифр:")
 client_code(digit)
 print()
