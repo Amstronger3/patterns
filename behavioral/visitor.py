@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from abc import ABC, abstractmethod
 
 
@@ -66,10 +64,10 @@ class Visitor(ABC):
 
 class ConcreteVisitor(Visitor):
 
-    def visit_bank(self, element) -> None:
+    def visit_bank(self, element):
         print(f"{element.special_method_for_bank()}")
 
-    def visit_factory(self, element) -> None:
+    def visit_factory(self, element):
         print(f"{element.special_method_for_factory()}")
 
     def visit_court(self, element):
