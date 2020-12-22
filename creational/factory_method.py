@@ -12,13 +12,6 @@ class CreatorTransport(ABC):
     def create_transport(self):
         pass
 
-    def sell(self):
-        product = self.create_transport()
-
-        result = f"Creator: The same creator's code has just worked with {product.sell()}"
-
-        return result
-
 
 class CarCreator(CreatorTransport):
 
