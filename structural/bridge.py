@@ -11,7 +11,7 @@ class Abstraction:
     def __init__(self, implementation):
         self.implementation = implementation
 
-    def operation(self) -> str:
+    def operation(self):
         return (f"Abstraction: Базовая операция:"
                 f"{self.implementation.operation_implementation()}")
 
