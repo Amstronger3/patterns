@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from abc import ABC, abstractmethod
 
 
@@ -23,7 +21,7 @@ class PasswordHandler(AbstractHandler):
     обработчика.
     """
 
-    _next_handler: PasswordHandler = None
+    _next_handler = None
 
     def set_next(self, handler):
         self._next_handler = handler
