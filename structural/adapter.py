@@ -48,3 +48,4 @@ print("Клиент: но я могу работать с Adaptee благода
 
 adapter = Adapter()
 client_code(adapter)
+.
