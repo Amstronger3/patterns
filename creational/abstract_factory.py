@@ -224,9 +224,9 @@ def client_code(factory):
     suv_car = factory.create_suv()
     sports_car = factory.create_sports_car()
 
-    print(sedan_car.body())
-    print(suv_car.engine())
-    print(sports_car.wheels())
+    sedan_car.body()
+    suv_car.engine()
+    sports_car.wheels()
 
 
 client_code(FordFactory())
